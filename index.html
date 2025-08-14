@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saiteja Gurrapu — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0b0f14; --fg: #e9eef5; --muted: #a7b3c5; --accent: #5bbad5;
+  --card: #121821; --line: #1e2633;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; }
+a { color: var(--accent); text-decoration: none; }
+header, section, footer { max-width: 980px; margin: 0 auto; padding: 24px; }
+.hero { padding: 72px 24px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
+.hero img { border-radius: 8px; max-width: 180px; }
+h1 { font-size: 40px; margin: 0 0 8px; }
+.tag { color: var(--muted); font-weight: 600; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+h2 { margin-top: 40px; font-size: 24px; }
+.pill { display: inline-block; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); margin: 4px 8px 0 0; font-size: 13px; }
+.muted { color: var(--muted); }
+footer { border-top: 1px solid var(--line); margin-top: 48px; padding-bottom: 48px; }
+.lang-switch { position: fixed; top: 20px; right: 20px; background: var(--card); color: var(--fg); border: 1px solid var(--line); padding: 6px 12px; border-radius: 6px; cursor: pointer; z-index: 100; }
+[lang-block] { display: none; }
+[lang-block].active { display: block; }
+</style>
+</head>
+<body>
+
+<button class="lang-switch" onclick="toggleLang()">DE / EN</button>
+
+<!-- HERO -->
+<header class="hero">
+  <img src="portrait.jpg" alt="Saiteja Gurrapu">
+  <div>
+    <div class="tag" lang-block="en" class="active">Materials Engineer • Quality Assurance • NDT</div>
+    <div class="tag" lang-block="de">Werkstoffingenieur • Qualitätsmanagement • ZfP</div>
+    <h1>Saiteja Gurrapu</h1>
+    <p class="muted" lang-block="en">Specialising in micromagnetic methods (3MA, Barkhausen Noise) for automotive quality assurance, process optimisation and research in materials testing.</p>
+    <p class="muted" lang-block="de">Spezialisiert auf mikromagnetische Methoden (3MA, Barkhausenrauschen) für Qualitätssicherung in der Automobilindustrie, Prozessoptimierung und Werkstoffprüfung.</p>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 lang-block="en" class="active">About</h2>
+  <h2 lang-block="de">Über mich</h2>
+
+  <p lang-block="en">M.Sc. Scientific Instrumentation candidate at University of Applied Sciences Jena, specialising in quality management, finite element method, and precision engineering. Experienced in inline hardness monitoring, signal analysis, and quality systems across automotive manufacturing and materials testing.</p>
+
+  <p lang-block="de">M.Sc.-Kandidat Scientific Instrumentation an der Ernst-Abbe-Hochschule Jena, spezialisiert auf Qualitätsmanagement, Finite-Elemente-Methode und Feinwerktechnik. Erfahrung in Inline-Härteüberwachung, Signalanalyse und Qualitätssystemen in Automobilproduktion und Werkstoffprüfung.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 lang-block="en">Skills</h2>
+  <h2 lang-block="de">Fähigkeiten</h2>
+  <div class="grid">
+    <div class="card">
+      <h3 lang-block="en">Quality Assurance</h3>
+      <h3 lang-block="de">Qualitätssicherung</h3>
+      <div>
+        <span class="pill">3MA</span><span class="pill">Barkhausen Noise</span><span class="pill">ISO 9001</span><span class="pill">SPC</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3 lang-block="en">Analysis & Methods</h3>
+      <h3 lang-block="de">Analyse & Methoden</h3>
+      <div>
+        <span class="pill">FFT</span><span class="pill">FEA</span><span class="pill">Six Sigma</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3 lang-block="en">Tools</h3>
+      <h3 lang-block="de">Werkzeuge</h3>
+      <div>
+        <span class="pill">Python</span><span class="pill">MATLAB</span><span class="pill">SolidWorks</span><span class="pill">Ansys</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 lang-block="en">Projects</h2>
+  <h2 lang-block="de">Projekte</h2>
+  <div class="grid">
+    <article class="card">
+      <h3 lang-block="en">Inline Hardness Monitoring</h3>
+      <h3 lang-block="de">Inline-Härteüberwachung</h3>
+      <p class="muted" lang-block="en">Applied Barkhausen noise FFT analysis to achieve 92% match with reference hardness values; integrated into automotive QA.</p>
+      <p class="muted" lang-block="de">Barkhausenrauschen mit FFT ausgewertet, um eine 92%ige Übereinstimmung mit Referenzhärten zu erreichen; Integration in die Automobil-QS.</p>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 lang-block="en">Contact</h2>
+  <h2 lang-block="de">Kontakt</h2>
+  <p><a href="mailto:saiteja.gurrapu2026@gmail.com">saiteja.gurrapu2026@gmail.com</a></p>
+</section>
+
+<footer>
+  <p class="muted" lang-block="en">© Saiteja Gurrapu. Built with HTML/CSS.</p>
+  <p class="muted" lang-block="de">© Saiteja Gurrapu. Erstellt mit HTML/CSS.</p>
+</footer>
+
+<script>
+let currentLang = 'en';
+function toggleLang(){
+  currentLang = currentLang === 'en' ? 'de' : 'en';
+  document.querySelectorAll('[lang-block]').forEach(el=>{
+    el.classList.toggle('active', el.getAttribute('lang-block') === currentLang);
+  });
+}
+toggleLang(); // Show EN by default
+toggleLang(); // Toggle back to EN after init
+</script>
+
+</body>
+</html>
