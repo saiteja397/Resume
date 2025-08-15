@@ -1,63 +1,61 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Saiteja Gurrapu — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="icon" href="favicon.ico" sizes="32x32">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon.ico" sizes="32x32">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <style>
 :root {
-  --bg: #0b0f14; --fg: #e9eef5; --muted: #a7b3c5; --accent: #5bbad5;
-  --card: #121821; --line: #1e2633; --chip: #0e141d; --ok: #41d3a2;
+  --bg:#0b0f14; --fg:#e9eef5; --muted:#a7b3c5; --accent:#5bbad5;
+  --card:#121821; --line:#1e2633; --chip:#0e141d; --ok:#41d3a2;
 }
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; }
-a { color: var(--accent); text-decoration: none; }
-.container { max-width: 1040px; margin: 0 auto; padding: 24px; }
-header.site { position: sticky; top: 0; backdrop-filter: saturate(150%) blur(8px); background: rgba(11,15,20,0.7); border-bottom: 1px solid var(--line); z-index: 50; }
-.nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 24px; max-width: 1040px; margin: 0 auto; }
-.brand { display: flex; align-items: center; gap: 12px; }
-.brand .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 16px rgba(91,186,213,.6); }
-.lang { display: flex; gap: 6px; align-items: center; }
-.lang button { background: var(--card); color: var(--fg); border: 1px solid var(--line); padding: 6px 10px; border-radius: 8px; cursor: pointer; font-weight: 600; }
-.lang button.active { outline: 2px solid var(--accent); }
-.hero { display: grid; grid-template-columns: 180px 1fr; gap: 20px; align-items: center; padding-top: 28px; }
-.hero img { width: 180px; height: 180px; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(0,0,0,.3); }
-h1 { font-size: 38px; margin: 0 0 6px; letter-spacing: .2px; }
-.tag { color: var(--muted); font-weight: 600; letter-spacing: .2px; }
-.lead { color: var(--muted); margin: 6px 0 0; }
-section { margin-top: 36px; }
-h2 { font-size: 24px; margin: 0 0 12px; }
-hr.sep { border: 0; border-top: 1px solid var(--line); margin: 8px 0 20px; }
-.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
-.pills { margin-top: 4px; }
-.pill { display: inline-block; padding: 5px 10px; background: var(--chip); border: 1px solid var(--line); border-radius: 999px; color: var(--muted); margin: 4px 8px 0 0; font-size: 13px; }
-.badge { display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 12px; border: 1px solid var(--line); color: var(--muted); }
-.badge.ok { border-color: rgba(65,211,162,.3); color: #9be8cf; }
-.timeline { position: relative; }
-.timeline::before { content: ""; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: var(--line); }
-.tl-item { position: relative; margin-left: 28px; padding-left: 18px; margin-bottom: 16px; }
-.tl-item::before { content: ""; position: absolute; left: -7px; top: 4px; width: 14px; height: 14px; background: var(--bg); border: 2px solid var(--accent); border-radius: 50%; }
-.item-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-.item-head strong { font-weight: 700; }
-.item-meta { color: var(--muted); }
-.kpi { color: var(--fg); background: rgba(65,211,162,.08); border: 1px solid rgba(65,211,162,.3); }
-.footer { border-top: 1px solid var(--line); margin-top: 40px; }
-.footer .links { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); }
-.small { font-size: 14px; color: var(--muted); }
-[lang-block] { display: none; }
-[lang-block].active { display: block; }
-@media (max-width: 720px) {
-  .hero { grid-template-columns: 1fr; }
-  .hero img { width: 120px; height: 120px; }
-}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+.container{max-width:1040px;margin:0 auto;padding:24px}
+header.site{position:sticky;top:0;backdrop-filter:saturate(150%) blur(8px);background:rgba(11,15,20,.7);border-bottom:1px solid var(--line);z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px;max-width:1040px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 16px rgba(91,186,213,.6)}
+.nav .links{display:flex;gap:14px;flex-wrap:wrap}
+.nav .links a{color:var(--fg);opacity:.9;padding:6px 8px;border-radius:8px}
+.nav .links a.active{outline:2px solid var(--accent)}
+.lang{display:flex;gap:8px}
+.lang button{padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+.lang button.active{outline:2px solid var(--accent)}
+.hero{display:grid;grid-template-columns:180px 1fr;gap:24px;align-items:center;padding-top:28px}
+.hero img{width:180px;height:180px;object-fit:cover;border-radius:14px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.3)}
+h1{font-size:38px;margin:0 0 6px;letter-spacing:.2px}
+h2{font-size:24px;margin:0 0 12px}
+.lead,.muted,.small{color:var(--muted)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.pills{margin-top:4px}
+.pill{display:inline-block;padding:5px 10px;background:var(--chip);border:1px solid var(--line);border-radius:999px;color:var(--muted);margin:4px 8px 0 0;font-size:13px}
+.badge{display:inline-block;padding:3px 8px;border-radius:999px;font-size:12px;border:1px solid var(--line);color:var(--muted)}
+.badge.ok{border-color:rgba(65,211,162,.3);color:#9be8cf}
+.timeline{position:relative}
+.timeline::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:var(--line)}
+.tl-item{position:relative;margin-left:28px;padding-left:18px;margin-bottom:16px}
+.tl-item::before{content:"";position:absolute;left:-7px;top:4px;width:14px;height:14px;background:var(--bg);border:2px solid var(--accent);border-radius:50%}
+.item-head{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.item-meta{color:var(--muted)}
+hr.sep{border:0;border-top:1px solid var(--line);margin:8px 0 20px}
+.footer{border-top:1px solid var(--line);margin-top:40px;padding:24px}
+.footer .links{display:flex;gap:16px;flex-wrap:wrap}
+.section{display:none}
+.section.active{display:block}
+[lang-block]{display:none}
+[lang-block].active{display:inline}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero img{width:120px;height:120px}}
 </style>
 </head>
-<body>
+<body id="top">
 
 <header class="site">
   <div class="nav">
@@ -65,193 +63,182 @@ hr.sep { border: 0; border-top: 1px solid var(--line); margin: 8px 0 20px; }
       <div class="dot" aria-hidden="true"></div>
       <div><strong>Saiteja Gurrapu</strong></div>
     </div>
-    <div class="lang" role="group" aria-label="Language switch">
-      <button id="btn-en" onclick="setLang('en')" aria-pressed="true" class="active">English</button>
-      <button id="btn-de" onclick="setLang('de')" aria-pressed="false">Deutsch</button>
+    <div class="links" id="nav-links">
+      <a href="#home" data-section="home" class="active">Home</a>
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#experience" data-section="experience">Experience</a>
+      <a href="#education" data-section="education">Education</a>
+      <a href="#certs" data-section="certs">Certifications</a>
+      <a href="#contact" data-section="contact">Contact</a>
+      <a href="#legal" data-section="legal">Legal</a>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button id="btn-en" class="active" onclick="setLang('en')" aria-pressed="true">EN</button>
+      <button id="btn-de" onclick="setLang('de')" aria-pressed="false">DE</button>
     </div>
   </div>
 </header>
 
 <main class="container">
-  <!-- HERO -->
-  <section class="hero">
-    <img src="portrait.jpg" alt="Portrait of Saiteja Gurrapu">
-    <div>
-      <div class="tag" lang-block="en" class="active">Materials Engineer • Quality Assurance • NDT</div>
-      <div class="tag" lang-block="de">Werkstoffingenieur • Qualitätsmanagement • ZfP</div>
-      <h1>Saiteja Gurrapu</h1>
-      <p class="lead" lang-block="en">Specializing in micromagnetic methods (3MA, Barkhausen Noise) for automotive quality assurance, inline hardness monitoring, and process optimization.</p>
-      <p class="lead" lang-block="de">Spezialisiert auf mikromagnetische Methoden (3MA, Barkhausenrauschen) für Qualitätssicherung in der Automobilindustrie, Inline-Härteüberwachung und Prozessoptimierung.</p>
-      <p class="small"><span class="badge">Jena, DE</span> <span class="badge">Open to roles</span> <span class="badge ok">Actively researching</span></p>
-    </div>
-  </section>
-
-  <!-- CONTACT (top for quick access) -->
-  <section id="contact">
-    <h2 lang-block="en">Contact</h2>
-    <h2 lang-block="de">Kontakt</h2>
-    <hr class="sep">
-    <p><a href="mailto:saiteja.gurrapu2026@gmail.com">saiteja.gurrapu2026@gmail.com</a> · Tel: +49 15781297811 · Jena, Germany</p>
-    <p class="small" lang-block="en">Address: Karl-Marx-Allee 1, 07747 Jena · Nationality: India · Born: 25.07.1999</p>
-    <p class="small" lang-block="de">Adresse: Karl-Marx-Allee 1, 07747 Jena · Staatsangehörigkeit: Indien · Geboren: 25.07.1999</p>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2 lang-block="en">About</h2>
-    <h2 lang-block="de">Über mich</h2>
-    <hr class="sep">
-    <p lang-block="en">M.Sc. Scientific Instrumentation candidate at University of Applied Sciences Jena with a focus on quality management, FEM, and precision engineering. Hands-on experience in Barkhausen noise/3MA, FFT-based signal analysis, and ISO 9001 environments across automotive QA and materials testing.</p>
-    <p lang-block="de">M.Sc.-Kandidat Scientific Instrumentation (Ernst-Abbe-Hochschule Jena) mit Schwerpunkt Qualitätsmanagement, FEM und Feinwerktechnik. Praxis in Barkhausenrauschen/3MA, FFT-Signalanalyse und ISO-9001-Umgebungen in Automobil-QS und Werkstoffprüfung.</p>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2 lang-block="en">Skills</h2>
-    <h2 lang-block="de">Fähigkeiten</h2>
-    <hr class="sep">
-    <div class="grid">
-      <div class="card">
-        <strong lang-block="en">Quality Assurance</strong>
-        <strong lang-block="de">Qualitätssicherung</strong>
-        <div class="pills">
-          <span class="pill">3MA</span><span class="pill">Barkhausen Noise</span><span class="pill">ISO 9001</span><span class="pill">SPC</span><span class="pill">FMEA</span><span class="pill">Root Cause</span><span class="pill">PPAP</span>
+  <!-- HOME -->
+  <section id="home" class="section active">
+    <div class="hero">
+      <img src="assets/portrait.jpg" alt="Portrait of Saiteja Gurrapu">
+      <div>
+        <div class="muted">
+          <span lang-block="en" class="active">Materials Engineer • Quality Assurance • NDT</span>
+          <span lang-block="de">Werkstoffingenieur • Qualitätsmanagement • ZfP</span>
         </div>
-      </div>
-      <div class="card">
-        <strong lang-block="en">Analysis & Methods</strong>
-        <strong lang-block="de">Analyse & Methoden</strong>
-        <div class="pills">
-          <span class="pill">FFT</span><span class="pill">Signal Processing</span><span class="pill">FEA</span><span class="pill">Six Sigma (DMAIC)</span><span class="pill">Lean 5S</span>
-        </div>
-      </div>
-      <div class="card">
-        <strong lang-block="en">Tools</strong>
-        <strong lang-block="de">Werkzeuge</strong>
-        <div class="pills">
-          <span class="pill">Python</span><span class="pill">MATLAB</span><span class="pill">Power BI</span><span class="pill">SAP</span>
-          <span class="pill">SolidWorks</span><span class="pill">CATIA V5</span><span class="pill">Ansys</span><span class="pill">Fusion 360</span>
-        </div>
-      </div>
-      <div class="card">
-        <strong lang-block="en">Languages</strong>
-        <strong lang-block="de">Sprachen</strong>
-        <div class="pills">
-          <span class="pill">Telugu (Native)</span><span class="pill">English (C2)</span><span class="pill">Deutsch (B1)</span>
-        </div>
+        <h1>Saiteja Gurrapu</h1>
+        <p class="lead" lang-block="en" class="active">Micromagnetic methods (3MA, Barkhausen Noise) for automotive QA, inline hardness monitoring, and process optimization.</p>
+        <p class="lead" lang-block="de">Mikromagnetische Methoden (3MA, Barkhausenrauschen) für Qualitätssicherung in der Automobilindustrie, Inline‑Härteüberwachung und Prozessoptimierung.</p>
+        <p class="small">Jena, Germany · <span lang-block="en" class="active">Open to roles</span><span lang-block="de">Offen für Positionen</span></p>
       </div>
     </div>
+
+    <section>
+      <h2><span lang-block="en" class="active">Highlights</span><span lang-block="de">Highlights</span></h2>
+      <hr class="sep">
+      <div class="grid">
+        <div class="card">
+          <strong lang-block="en" class="active">Inline Hardness Monitoring</strong>
+          <strong lang-block="de">Inline‑Härteüberwachung</strong>
+          <p class="small" lang-block="en" class="active">Barkhausen noise FFT; 92% agreement with reference; Six Sigma; sensor integration.</p>
+          <p class="small" lang-block="de">Barkhausenrauschen mit FFT; 92% Übereinstimmung mit Referenz; Six Sigma; Sensorintegration.</p>
+          <p><span class="pill">3MA</span><span class="pill">FFT</span><span class="pill">Automotive QA</span></p>
+        </div>
+        <div class="card">
+          <strong>BIW</strong>
+          <p class="small" lang-block="en" class="active">BIW chassis optimization with SolidWorks + FEA; 15% lighter.</p>
+          <p class="small" lang-block="de">BIW‑Chassis mit SolidWorks + FEA optimiert; 15% leichter.</p>
+          <p><span class="pill">SolidWorks</span><span class="pill">FEA</span></p>
+        </div>
+        <div class="card">
+          <strong lang-block="en" class="active">Composite Wheel Rim</strong>
+          <strong lang-block="de">Verbund‑Felge</strong>
+          <p class="small" lang-block="en" class="active">Ansys FEA; 22% weight reduction.</p>
+          <p class="small" lang-block="de">Ansys FEA; 22% Gewichtsreduktion.</p>
+          <p><span class="pill">Ansys</span><span class="pill">Composites</span></p>
+        </div>
+      </div>
+    </section>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
-    <h2 lang-block="en">Projects</h2>
-    <h2 lang-block="de">Projekte</h2>
+  <section id="projects" class="section">
+    <h2><span lang-block="en" class="active">Projects</span><span lang-block="de">Projekte</span></h2>
     <hr class="sep">
     <div class="grid">
       <article class="card">
-        <div class="item-head"><strong lang-block="en">Inline Hardness Monitoring for Hot Forming</strong><strong lang-block="de">Inline-Härteüberwachung beim Warmumformen</strong><span class="badge kpi">92% match</span></div>
-        <p class="small" lang-block="en">Barkhausen noise signal evaluation (FFT); sensor integration; compared to reference methods; Six Sigma optimization.</p>
-        <p class="small" lang-block="de">Auswertung Barkhausenrauschen (FFT); Sensorintegration; Abgleich mit Referenzmethoden; Six-Sigma-Optimierung.</p>
-        <p><span class="pill">3MA</span><span class="pill">FFT</span><span class="pill">Automotive QA</span></p>
+        <div class="item-head">
+          <strong lang-block="en" class="active">Inline Hardness Monitoring for Hot Forming</strong>
+          <strong lang-block="de">Inline‑Härteüberwachung beim Warmumformen</strong>
+          <span class="badge ok">92% match</span>
+        </div>
+        <p class="small" lang-block="en" class="active">FFT evaluation of Barkhausen noise; sensor integration; validation vs. conventional methods; Six Sigma, 5S.</p>
+        <p class="small" lang-block="de">FFT‑Auswertung des Barkhausenrauschens; Sensorintegration; Validierung ggü. konventionellen Methoden; Six Sigma, 5S.</p>
+        <p><span class="pill">3MA</span><span class="pill">FFT</span><span class="pill">ISO 9001</span></p>
       </article>
 
       <article class="card">
-        <div class="item-head"><strong lang-block="en">BIW Chassis Design Optimization</strong><strong lang-block="de">BIW-Chassis Designoptimierung</strong><span class="badge kpi">15% lighter</span></div>
-        <p class="small" lang-block="en">SolidWorks + FEA to reduce structural mass while maintaining performance.</p>
-        <p class="small" lang-block="de">SolidWorks + FEA zur Gewichtsreduktion bei gleichbleibender Performance.</p>
+        <div class="item-head">
+          <strong lang-block="en" class="active">BIW Chassis Design Optimization</strong>
+          <strong lang-block="de">BIW‑Chassis Designoptimierung</strong>
+          <span class="badge ok">15% lighter</span>
+        </div>
+        <p class="small" lang-block="en" class="active">Reduced structural mass while maintaining performance via SolidWorks + FEA.</p>
+        <p class="small" lang-block="de">Strukturmasse reduziert bei gleichbleibender Performance (SolidWorks + FEA).</p>
         <p><span class="pill">SolidWorks</span><span class="pill">FEA</span></p>
       </article>
 
       <article class="card">
-        <div class="item-head"><strong lang-block="en">Lightweight Composite Wheel Rim</strong><strong lang-block="de">Leichtbau-Verbundfelge</strong><span class="badge kpi">22% lighter</span></div>
-        <p class="small" lang-block="en">Ansys FEA + composite selection to achieve lightweight target.</p>
-        <p class="small" lang-block="de">Ansys FEA + Werkstoffauswahl zur Zielerreichung Leichtbau.</p>
+        <div class="item-head">
+          <strong lang-block="en" class="active">Lightweight Composite Wheel Rim</strong>
+          <strong lang-block="de">Leichtbau‑Verbundfelge</strong>
+          <span class="badge ok">22% lighter</span>
+        </div>
+        <p class="small" lang-block="en" class="active">Ansys FEA and composite selection to achieve weight target.</p>
+        <p class="small" lang-block="de">Ansys FEA und Werkstoffauswahl zur Gewichtsreduzierung.</p>
         <p><span class="pill">Ansys</span><span class="pill">Composites</span></p>
       </article>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section id="experience">
-    <h2 lang-block="en">Experience</h2>
-    <h2 lang-block="de">Berufserfahrung</h2>
+  <section id="experience" class="section">
+    <h2><span lang-block="en" class="active">Experience</span><span lang-block="de">Berufserfahrung</span></h2>
     <hr class="sep">
     <div class="timeline">
       <div class="tl-item">
         <div class="item-head">
           <strong>Master’s Thesis — Magna International</strong>
-          <span class="item-meta">02/2025 – Present · Heiligenstadt, Germany</span>
+          <span class="item-meta">02/2025 – Present · Heiligenstadt, DE</span>
           <span class="badge">Research</span>
         </div>
-        <p class="small" lang-block="en">Barkhausen noise for hardness determination (FFT; 92% agreement); sensor integration; validation vs. conventional methods; Six Sigma (DMAIC); 5S for test station organization.</p>
-        <p class="small" lang-block="de">Barkhausenrauschen zur Härtebestimmung (FFT; 92% Übereinstimmung); Sensorintegration; Validierung ggü. konventionellen Methoden; Six Sigma (DMAIC); 5S an der Prüfstation.</p>
+        <p class="small" lang-block="en" class="active">Barkhausen noise for hardness (FFT; 92% agreement); sensor integration; validation vs. conventional methods; Six Sigma (DMAIC); 5S.</p>
+        <p class="small" lang-block="de">Barkhausenrauschen zur Härtebestimmung (FFT; 92% Übereinstimmung); Sensorintegration; Validierung; Six Sigma (DMAIC); 5S.</p>
       </div>
 
       <div class="tl-item">
         <div class="item-head">
           <strong>Quality Assurance Intern — Magna International</strong>
-          <span class="item-meta">09/2024 – 02/2025 · Heiligenstadt, Germany</span>
+          <span class="item-meta">09/2024 – 02/2025 · Heiligenstadt, DE</span>
           <span class="badge">QA</span>
         </div>
-        <p class="small" lang-block="en">Calibrated 3MA systems; hardness tests on body parts; corrective actions monitoring; Power BI dashboards for quality data (30% time savings); ISO 9001 documentation and planning support.</p>
-        <p class="small" lang-block="de">Kalibrierung 3MA; Härteprüfungen an Karosserieteilen; Überwachung von Korrekturmaßnahmen; Power-BI-Dashboards (30% Zeitersparnis); ISO-9001-Dokumentation und Qualitätsplanung.</p>
+        <p class="small" lang-block="en" class="active">3MA calibration; hardness tests; corrective actions; Power BI dashboards (30% time savings); ISO 9001 documentation and planning.</p>
+        <p class="small" lang-block="de">3MA‑Kalibrierung; Härteprüfungen; Korrekturmaßnahmen; Power‑BI‑Dashboards (30% Zeitersparnis); ISO‑9001‑Dokumentation und Planung.</p>
       </div>
 
       <div class="tl-item">
         <div class="item-head">
           <strong>Programming Analyst — Cognizant</strong>
-          <span class="item-meta">11/2021 – 07/2022 · Hyderabad, India</span>
+          <span class="item-meta">11/2021 – 07/2022 · Hyderabad, IN</span>
           <span class="badge">Testing</span>
         </div>
-        <p class="small" lang-block="en">Manual/automated testing, test case creation; process optimization within agile teams.</p>
-        <p class="small" lang-block="de">Manuelle/automatisierte Tests, Testfall-Erstellung; Prozessoptimierung in agilen Teams.</p>
+        <p class="small" lang-block="en" class="active">Manual/automated testing, test cases; process optimization in agile teams.</p>
+        <p class="small" lang-block="de">Manuelle/automatisierte Tests, Testfälle; Prozessoptimierung in agilen Teams.</p>
       </div>
 
       <div class="tl-item">
         <div class="item-head">
           <strong>Design Engineer Intern — Skyy Riders Electric</strong>
-          <span class="item-meta">06/2021 – 11/2021 · Bhubaneshwar, India</span>
+          <span class="item-meta">06/2021 – 11/2021 · Bhubaneshwar, IN</span>
           <span class="badge">Design</span>
         </div>
-        <p class="small" lang-block="en">BIW chassis structure in SolidWorks; 15% weight reduction via FEA.</p>
-        <p class="small" lang-block="de">BIW-Chassis in SolidWorks; 15% Gewichtsreduktion via FEA.</p>
+        <p class="small" lang-block="en" class="active">BIW chassis structure in SolidWorks; 15% weight reduction via FEA.</p>
+        <p class="small" lang-block="de">BIW‑Chassis in SolidWorks; 15% Gewichtsreduktion via FEA.</p>
       </div>
     </div>
   </section>
 
   <!-- EDUCATION -->
-  <section id="education">
-    <h2 lang-block="en">Education</h2>
-    <h2 lang-block="de">Ausbildung</h2>
+  <section id="education" class="section">
+    <h2><span lang-block="en" class="active">Education</span><span lang-block="de">Ausbildung</span></h2>
     <hr class="sep">
     <div class="timeline">
       <div class="tl-item">
         <div class="item-head">
-          <strong lang-block="en">M.Sc. Scientific Instrumentation — EAH Jena</strong>
-          <strong lang-block="de">M.Sc. Scientific Instrumentation — EAH Jena</strong>
-          <span class="item-meta">10/2022 – Present · Jena, Germany</span>
+          <strong>M.Sc. Scientific Instrumentation — EAH Jena</strong>
+          <span class="item-meta">10/2022 – Present · Jena, DE</span>
         </div>
-        <p class="small" lang-block="en">Specialization: Quality management, 3D design, FEM, precision engineering. Thesis: “Inline hardness monitoring for hot forming using micromagnetic methods”.</p>
-        <p class="small" lang-block="de">Schwerpunkte: Qualitätsmanagement, 3D-Konstruktion, FEM, Feinwerktechnik. Thesis: „Inline-Härteüberwachung beim Warmumformen mit mikromagnetischen Methoden“.</p>
+        <p class="small" lang-block="en" class="active">Specialization: Quality management, 3D design, FEM, precision engineering. Thesis: “Inline hardness monitoring for hot forming using micromagnetic methods”.</p>
+        <p class="small" lang-block="de">Schwerpunkte: Qualitätsmanagement, 3D‑Konstruktion, FEM, Feinwerktechnik. Thesis: „Inline‑Härteüberwachung beim Warmumformen mit mikromagnetischen Methoden“.</p>
       </div>
 
       <div class="tl-item">
         <div class="item-head">
-          <strong lang-block="en">B.Sc. Mechanical Engineering — JNTU Hyderabad</strong>
-          <strong lang-block="de">B.Sc. Maschinenbau — JNTU Hyderabad</strong>
-          <span class="item-meta">10/2018 – 09/2022 · Hyderabad, India</span>
+          <strong>B.Sc. Mechanical Engineering — JNTU Hyderabad</strong>
+          <span class="item-meta">10/2018 – 09/2022 · Hyderabad, IN</span>
         </div>
-        <p class="small" lang-block="en">Specialization: Quality management, materials (metallurgy, composites), CAD/CAM, FEM (Ansys), manufacturing, automotive. Thesis: “Analysis of a lightweight composite wheel rim” (22% weight reduction with Ansys FEA).</p>
-        <p class="small" lang-block="de">Schwerpunkte: Qualitätsmanagement, Werkstoffe (Metallurgie, Verbunde), CAD/CAM, FEM (Ansys), Fertigung, Automotive. Thesis: „Analyse einer leichten Verbundfelge“ (22% Gewichtsreduktion mit Ansys FEA).</p>
+        <p class="small" lang-block="en" class="active">Specialization: QM, materials (metallurgy, composites), CAD/CAM, FEM (Ansys), manufacturing, automotive. Thesis: “Lightweight composite wheel rim” (22% weight reduction with Ansys FEA).</p>
+        <p class="small" lang-block="de">Schwerpunkte: QM, Werkstoffe (Metallurgie, Verbunde), CAD/CAM, FEM (Ansys), Fertigung, Automotive. Thesis: „Leichte Verbundfelge“ (22% Gewichtsreduktion mit Ansys FEA).</p>
       </div>
     </div>
   </section>
 
   <!-- CERTIFICATIONS -->
-  <section id="certs">
-    <h2 lang-block="en">Certifications & Training</h2>
-    <h2 lang-block="de">Zertifikate & Schulungen</h2>
+  <section id="certs" class="section">
+    <h2><span lang-block="en" class="active">Certifications & Training</span><span lang-block="de">Zertifikate & Schulungen</span></h2>
     <hr class="sep">
     <div class="grid">
       <div class="card"><strong>Six Sigma White Belt</strong> — Council for Six Sigma · 05/2025</div>
@@ -263,74 +250,76 @@ hr.sep { border: 0; border-top: 1px solid var(--line); margin: 8px 0 20px; }
     </div>
   </section>
 
-  <!-- INTERESTS -->
-  <section id="interests">
-    <h2 lang-block="en">Interests</h2>
-    <h2 lang-block="de">Interessen</h2>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2><span lang-block="en" class="active">Contact</span><span lang-block="de">Kontakt</span></h2>
     <hr class="sep">
-    <p lang-block="en">Backpacking in Europe and Africa; Basketball (7 years in a club).</p>
-    <p lang-block="de">Backpacking in Europa und Afrika; Basketball (7 Jahre im Verein).</p>
+    <p><a href="mailto:saiteja.gurrapu2026@gmail.com">saiteja.gurrapu2026@gmail.com</a> · Tel: +49 15781297811 · Jena, Germany</p>
+    <p class="small" lang-block="en" class="active">Address: Karl‑Marx‑Allee 1, 07747 Jena · Nationality: India · Born: 25.07.1999</p>
+    <p class="small" lang-block="de">Adresse: Karl‑Marx‑Allee 1, 07747 Jena · Staatsangehörigkeit: Indien · Geboren: 25.07.1999</p>
   </section>
 
   <!-- LEGAL -->
-  <section id="legal">
-    <h2 lang-block="en">Legal</h2>
-    <h2 lang-block="de">Rechtliches</h2>
+  <section id="legal" class="section">
+    <h2><span lang-block="en" class="active">Legal</span><span lang-block="de">Rechtliches</span></h2>
     <hr class="sep">
     <div class="grid">
       <div class="card">
-        <strong lang-block="en">Imprint (Impressum)</strong>
-        <strong lang-block="de">Impressum</strong>
-        <p class="small" lang-block="en">Operator: Saiteja Gurrapu, Karl-Marx-Allee 1, 07747 Jena, Germany. Email: saiteja.gurrapu2026@gmail.com. Tel: +49 15781297811.</p>
-        <p class="small" lang-block="de">Betreiber: Saiteja Gurrapu, Karl-Marx-Allee 1, 07747 Jena, Deutschland. E‑Mail: saiteja.gurrapu2026@gmail.com. Tel: +49 15781297811.</p>
-        <p class="small" lang-block="en">Make sure your Impressum is easy to find and available in both languages, as required in Germany.</p>
-        <p class="small" lang-block="de">Das Impressum muss leicht auffindbar und in beiden Sprachen verfügbar sein (Vorgaben in Deutschland).</p>
+        <strong><span lang-block="en" class="active">Imprint (Impressum)</span><span lang-block="de">Impressum</span></strong>
+        <p class="small" lang-block="en" class="active">Operator: Saiteja Gurrapu, Karl‑Marx‑Allee 1, 07747 Jena, Germany. Email: saiteja.gurrapu2026@gmail.com. Tel: +49 15781297811.</p>
+        <p class="small" lang-block="de">Betreiber: Saiteja Gurrapu, Karl‑Marx‑Allee 1, 07747 Jena, Deutschland. E‑Mail: saiteja.gurrapu2026@gmail.com. Tel: +49 15781297811.</p>
       </div>
       <div class="card">
-        <strong lang-block="en">Privacy</strong>
-        <strong lang-block="de">Datenschutz</strong>
-        <p class="small" lang-block="en">This site does not use trackers or analytics. If contact is made via email, data is used solely to respond and then deleted unless required otherwise.</p>
-        <p class="small" lang-block="de">Diese Seite verwendet keine Tracker/Analytics. Bei Kontakt per E‑Mail werden Daten nur zur Beantwortung verwendet und anschließend gelöscht, sofern keine Aufbewahrungspflichten bestehen.</p>
+        <strong><span lang-block="en" class="active">Privacy</span><span lang-block="de">Datenschutz</span></strong>
+        <p class="small" lang-block="en" class="active">No analytics or trackers are used. If contact is made via email, data is used solely to reply and then deleted unless retention is required.</p>
+        <p class="small" lang-block="de">Keine Analytics oder Tracker. Bei Kontakt per E‑Mail werden Daten ausschließlich zur Beantwortung verwendet und danach gelöscht, sofern keine Aufbewahrungspflichten bestehen.</p>
       </div>
     </div>
   </section>
 
   <section class="footer">
     <div class="links">
-      <a href="#about" lang-block="en">About</a>
-      <a href="#about" lang-block="de">Über mich</a>
-      <a href="#projects" lang-block="en">Projects</a>
-      <a href="#projects" lang-block="de">Projekte</a>
-      <a href="#experience" lang-block="en">Experience</a>
-      <a href="#experience" lang-block="de">Berufserfahrung</a>
-      <a href="#education" lang-block="en">Education</a>
-      <a href="#education" lang-block="de">Ausbildung</a>
-      <a href="#certs" lang-block="en">Certs</a>
-      <a href="#certs" lang-block="de">Zertifikate</a>
-      <a href="#legal" lang-block="en">Imprint & Privacy</a>
-      <a href="#legal" lang-block="de">Impressum & Datenschutz</a>
+      <a href="#top"><span lang-block="en" class="active">Back to top</span><span lang-block="de">Nach oben</span></a>
+      <a href="#legal"><span lang-block="en" class="active">Imprint & Privacy</span><span lang-block="de">Impressum & Datenschutz</span></a>
     </div>
     <p class="small">© Saiteja Gurrapu</p>
   </section>
 </main>
 
 <script>
-let currentLang = 'en';
+let currentLang='en';
 function setLang(lang){
-  currentLang = lang;
+  currentLang=lang;
+  // Toggle language blocks
   document.querySelectorAll('[lang-block]').forEach(el=>{
-    const isActive = el.getAttribute('lang-block') === currentLang;
-    el.classList.toggle('active', isActive);
+    el.classList.toggle('active', el.getAttribute('lang-block')===lang);
   });
+  // Toggle language buttons
   document.getElementById('btn-en').classList.toggle('active', lang==='en');
   document.getElementById('btn-en').setAttribute('aria-pressed', lang==='en');
   document.getElementById('btn-de').classList.toggle('active', lang==='de');
   document.getElementById('btn-de').setAttribute('aria-pressed', lang==='de');
 }
-// initialize
+// Initialize language on load
 setLang('en');
+
+// Client-side router for multi-section navigation
+const sections=[...document.querySelectorAll('.section')];
+const links=[...document.querySelectorAll('#nav-links a')];
+function showSection(id){
+  sections.forEach(s=>s.classList.toggle('active', s.id===id));
+  links.forEach(a=>a.classList.toggle('active', a.dataset.section===id));
+  // Update hash without scrolling jump
+  history.replaceState(null,'',`#${id}`);
+}
+function handleHash(){
+  const target=(location.hash||'#home').replace('#','');
+  if(sections.some(s=>s.id===target)){ showSection(target); }
+  else{ showSection('home'); }
+}
+window.addEventListener('hashchange', handleHash);
+handleHash();
 </script>
 
 </body>
 </html>
-
